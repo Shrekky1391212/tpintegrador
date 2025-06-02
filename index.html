@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinyl Player es una plataforma que busca expandir tus horizontes musicales, presentándote nuevos géneros, artistas y sonidos únicos. Descubrí música que nunca imaginaste amar, con recomendaciones personalizadas y contenido curado especialmente para abrir tus oídos a experiencias musicales distintas. ¡Explorá, escuchá y sorprendete con Vinyl Player!">
+    <meta name="keywords" content="recomendaciones de música, descubrir nueva música, explorar géneros musicales, música para todos los gustos, sugerencias de artistas, vinyl player música, ampliar gustos musicales, nuevos artistas recomendados, playlist personalizadas, descubrimiento musica">
+    <meta name="author" content="maria laura rey fadel, lucia miguel, felicia sanchez giraudo">
+    <title>VinylPlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/notas_musicales.json">
+    <link rel="stylesheet" href="music-notesverde.json">
+    <link rel="stylesheet" href="music-notesbeige.json">
+    <link rel="stylesheet" href="music-notesred.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Tagesschrift&family=Underdog&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <center><h1 style="font-family: Tagesschrift, system-ui;">Vinyl Player</h1></center> 
+    </header>
+    <nav>
+        <button style="background-color: rgb(239, 146, 146);"  onclick="history.back()"> <b> <h1>></h1></b></b></button>
+        <center>
+            <table>
+                <tr>
+                    <th><a href="./index.html"><img src="assets/inicio.png" alt="Inicio" width="300px"></a></th>
+                    <th><a href="./nosotros.html"><img src="assets/nosotros.png" alt="Nosotros" width="300px"></a></th>
+                    <th><a href="./contacto.html"><img src="assets/contactanos.png" alt="Contacto" width="300px"></a></th>
+                </tr>
+            </table>
+        </center>
+        <br><br><br>
+    </nav> 
+    <main>
+        <section>
+            <center>
+                <table style="width:70% ;">
+                    <tr>
+                        <td>
+                        <h1 style="font-family: Tagesschrift, system-ui;">Jazz</h1> 
+                        <div class="contenedor">
+                        <a href="jazz.html"><img src="assets/viniloo.jpg"  class="Jazz" alt="Vinilo Jazz" width="200px"></a>
+                         <div id="animacion"></div>
+                        </div>
+  
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+                        <script>
+                            const vinilo = document.querySelector('.Jazz');
+                            const contenedor = document.getElementById('animacion');
+
+                            
+                            const animacion = lottie.loadAnimation({
+                            container: contenedor,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            path: 'music-notes.json' 
+                            });
+
+                        
+                            vinilo.addEventListener('mouseenter', () => {
+                            animacion.play();
+                            });
+
+                            vinilo.addEventListener('mouseleave', () => {
+                            animacion.stop();
+                            });
+                        </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+                        </td>
+                        <td>
+                            <h1 style="font-family: Tagesschrift, system-ui;">Pop</h1> 
+                        <div class="contenedor1" style="position: relative;">
+                        <a href="pop.html">
+                            <img src="assets/vinilorojo.png"  class="Pop" alt="Vinilo Pop" width="200px">
+                        </a>
+                         <div id="animacion1" style="width: 200px; height: 200px; position: absolute;
+                         "></div>
+                        </div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+                        <script>
+                            const vinilo1 = document.querySelector('.Pop');
+                            const contenedor1 = document.getElementById('animacion1');
+
+                            
+                            const animacion1 = lottie.loadAnimation({
+                            container: contenedor1,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            path: 'music-notesred.json' 
+                            });
+
+                        
+                            vinilo1.addEventListener('mouseenter', () => {
+                            animacion1.play();
+                            });
+
+                            vinilo1.addEventListener('mouseleave', () => {
+                            animacion1.stop();
+                            });
+                        </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+                        </td>
+                    </tr>
+                    <td >
+                        <h1 style="font-family: Tagesschrift, system-ui;">Rock</h1> 
+                        <div class="contenedor2">
+                        <a href="rock.html"><img src="assets/viniloverde.png"  class="Rock" alt="Vinilo Rock" width="200px"></a>
+                         <div id="animacion2" style="width: 200px; height: 200px; position: absolute;
+                        "></div>
+                        </div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+                        <script>
+                            const vinilo2 = document.querySelector('.Rock');
+                            const contenedor2 = document.getElementById('animacion2');
+
+                            
+                            const animacion2 = lottie.loadAnimation({
+                            container: contenedor2,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            path: 'music-notesverde.json' 
+                            });
+
+                        
+                            vinilo2.addEventListener('mouseenter', () => {
+                            animacion2.play();
+                            });
+
+                            vinilo2.addEventListener('mouseleave', () => {
+                            animacion2.stop();
+                            });
+                        </script>
+                    </td>
+                    <td>
+                        <h1 style="font-family: Tagesschrift, system-ui;">Indie</h1> 
+                        <div class="contenedor3">
+                        <a href="indie.html"><img src="assets/vinilobeige.png"  class="Indie" alt="Vinilo Indie" width="200px"></a>
+                         <div id="animacion3"></div>
+                        </div>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+                    <script>
+                        const vinilo3 = document.querySelector('.Indie');
+                        const contenedor3 = document.getElementById('animacion3');
+
+                        
+                        const animacion3 = lottie.loadAnimation({
+                        container: contenedor3,
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: false,
+                        path: 'music-notesbeige.json' 
+                        });
+
+                    
+                        vinilo3.addEventListener('mouseenter', () => {
+                        animacion3.play();
+                        });
+
+                        vinilo3.addEventListener('mouseleave', () => {
+                        animacion3.stop();
+                        });
+                    </script>
+                    </td>
+                    <tr>
+
+                    </tr>
+
+                </table>
+            </center>
+        </section>
+    </main>   
+    <footer>
+        Copyright © Vinylplayer
+    </footer> 
+</body>
